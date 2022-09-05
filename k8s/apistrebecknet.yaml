@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: fast-api
-        image: vba2/k8s-fast-api:0.2
+        image: public.ecr.aws/c9v8v5y5/api.strebeck.net
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
